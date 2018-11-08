@@ -94,3 +94,10 @@ Cat.prototype = new Animal()
 下面的图是一张原型链的图, 图中`__proto__`对应 `[[prototype]]`
 
 ![avatar](prototype.jpg)
+
+##### 参考
+
++ [Why is it necessary to set the prototype constructor?](https://stackoverflow.com/questions/8453887/why-is-it-necessary-to-set-the-prototype-constructor)
++ [JavaScript instanceof 运算符深入剖析](https://www.ibm.com/developerworks/cn/web/1306_jiangjj_jsinstanceof/index.html)
++ [Object.getPrototypeOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf)
++ [继承与原型链](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf)

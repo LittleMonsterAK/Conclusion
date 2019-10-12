@@ -1,0 +1,17 @@
+编译go项目时候直接抛出'netdb.h' file not found，这是个系统头文件。查看了下mac下没有/usr/include目录。
+解决办法很简单，可以安装xcode，然后安装command line tools，但是有个更简单的方法是直接安装这个tools。
+
+xcode-select --install
+
+安装完成后头文件会出现在
+
+/Library/Developer/CommandLineTools/usr/include
+如果没有说明安装失败了。
+
+但是安装完了还没有结束，这个时候没有/usr/include
+需要再执行
+
+cd /Library/Developer/CommandLineTools/Packages/
+open macOS_SDK_headers_for_macOS_10.14.pkg
+
+执行完才算是真正完成。这个时候就有了/usr/include
